@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ADVOCATE DESHPANDE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #303030
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #FFFFFF;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #303030;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+ 
+      padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #303030;
+      color: #fff;
+      
+  }
+  .logo-small {
+      color: #524d4c;
+      font-size: 50px;
+  }
+  .logo {
+      color: #525252;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #525252;
+  }
+  .carousel-indicators li {
+      border-color: #525252;
+  }
+  .carousel-indicators li.active {
+      background-color: #525252;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #525252; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #525252;
+      background-color: #fff !important;
+      color: #525252;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #525252 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #525252;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #000000;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 3 !important;
+      letter-spacing: 1px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .kk
+  {
+    padding-top: 00px;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #525252 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #525252;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  .ok
+  {
+    background-image: url("scales.jpg");
+    background-repeat: no-repeat;
+
+  }
+  .zoom {
+    padding: 50px;
+  
+    transition: transform .2s; /* Animation */
+   
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+  #map {
+        height: 50%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+.circular
+{
+  border-radius: 50%;
+}
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+      <a class="navbar-brand" href="#myPage" ><img class="kk" src="icon.png" height="30" width="40"></a>
+      <a class="navbar-brand" href="#myPage">DESHPANDE-THAKARE-MORE ASSOCIATES</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">SPECIALIZATION'S</a></li>
+        <li><a href="#portfolio">PERSONAL INFORMATION</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+
+    
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+	  <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+       <img src="main2.jpg" alt="SPACE"   style="width:100%;">
+        <div class="carousel-caption">
+		<p></p>
+
+	 <h4>"Law is not a law, if it violets the principles of Eternal Justice"</h4>
+          
+        </div>      
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="item ">
+         <img src="main4.jpg" alt="GALAXY" style="width:100%;" >
+        <div class="carousel-caption">
+          <h4>“Never be afraid to raise your voice for honesty and truth and compassion against injustice and lying and greed. If people all over the world...would do this, it would change the earth.” </h4>
+   
+        </div>      
+      </div>
+
+
+<div class="item ">
+         <img src="main6.jpg" alt="GALAXY12" style="width:100%;" >
+        <div class="carousel-caption">
+          <h4>"The Safety of the people is the highest Law!!"</h4>
+          
+        </div>      
+      </div>
+    
+     
+    </div>
+
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+<div class="jumbotron text-center" >
+  <center>
+    <img src="Advsymbol.png"  height="250"/>
+    <h1>DESHPANDE-THAKARE-MORE </h1><br><h1>ASSOCIATE'S</h1> 
+	<br>
+	<br>
+     
+</center>
+</div>
+
+
+
+<div id="about" class="container-fluid bg-grey">
+  <div class="row">
+
+    <div class="col-sm-4">
+    <span><img align="right"  class="lo" src="two.png" height="300" width="300"/></span>
+    </div>
+    <div align="center" class="col-sm-8">
+      <h2></h2><br>
+      
+<h2>SECTOR'S OF PRACTICES :</h2>
+	<ul>
+  <li>CRIMINAL CASES</li>
+  <li>CIVIL</li>
+  <li>ARBITRATION</li>
+  <li>BANKING SCAM AND FRAUD'S</li>
+  <li>CONSUMER</li>
+  <li>REVENUE</li>	
+  <li>CONVEYANCING</li>
+ <li>LEGAL AUDITING</li>	
+<li>FAMILY</li>
+	
+
+</ul>  
+
+
+    </div>
+  </div>
+</div>
+
+<div id="services" class="container-fluid text-center">
+  <h2 style="color:#303030">SEPCIALIZATION'S</h2>
+  
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-6">
+	
+      <span > <img class="circular" src="niact.png" alt="Avatar"> </span>
+      <h4 style="color:#303030">NEGOTIABLE INSTRUMENT ACT</h4>
+      <p>An Act to define and Law relating to negotiable instruments which are Promissory Notes, Bills of Exchange and cheques</p>
+    </div>
+    
+    <div class="col-sm-5">
+ 	 <span > <img class="circular" src="Bails.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">REGULAR AND ANTICIPATORY BAIL</h4>
+      <p>If a person apprehends that he might be arrested, he may apply for anAnticipatory Bail. (Regular) Bail is applied for by a person AFTER his arrest. ... So he applies for the baileven before the arrest. Regular bail- when a person is granted bail by the court after arrest.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    
+    <div class="col-sm-6">
+      <span > <img class="circular" src="arr.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">APPEAL ,REVIEW AND REVISION'S</h4>
+      <p>Definition of appeal. (Entry 1 of 2) 1law : a legal proceeding by which a case is brought before a higher court for review of the decision of a lower court.</p>
+    </div>
+    <div class="col-sm-5">
+ <span > <img class="circular" src="writ.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030;">WRITS</h4>
+      <p>A writ petition is a filing that a party makes with an appeals court in order to secure a speedy review of some issue. ... A writ petition is essentially a court petition for extraordinary review, asking a court to intervene in a lower court's decision.</p>
+    </div>
+	
+
+  </div>
+<br><br>
+<div class="row slideanim">
+    
+    <div class="col-sm-6">
+    <span > <img class="circular" src="arbit.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">ARBITRATION AND CONCILIATION</h4>
+      <p>Ad-hoc Arbitration can be defined as a procedure of arbitration where a tribunal will conduct arbitrationbetween the parties, following the rules which have been agreed by the parties beforehand or by following the rules which have been laid down by the tribunal, in case the parties do not have any agreement between ...</p>
+    </div>
+    <div class="col-sm-5">
+     <span > <img class="circular" src="litigation.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030;">LITIGATION MANAGEMENT</h4>
+      <p>Litigation management is a term that is thrown around a lot these days. Insurers and third-party administrators assure their customers that litigation management is a standard claims service that they provide.</p>
+    </div>
+	
+
+  </div>
+
+<br>
+<br>
+<div class="row slideanim">
+    
+    <div class="col-sm-6">
+       <span > <img class="circular" src="fas.png" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">CORPORATE ADVISORY</h4>
+      <p>Corporate finance advisory means theadvisory services that are provided to the various corporate bodies about thefinancial aspect of their operations. • These services may be provided by theadvisory boards of the companies or by professional bodies who deal in such services</p>
+    </div>
+    <div class="col-sm-5">
+             <span > <img class="circular" src="intellect.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030;">INTELLECTUAL PROPERTY LAW</h4>
+      <p>Intellectual property law is the area oflaw that deals with legal rights to creative works and inventions. It controls who gets to use creations including new products, artistic works and designs. The purpose ofintellectual property law is to allow the people who create and invent things to profit from their work.</p>
+    </div>
+	
+
+  </div>
+
+<br><br>
+<div class="row slideanim">
+    
+    <div class="col-sm-6">
+       <span > <img class="circular" src="Trust.png" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">TRUST AND SOCIETY REGISTERATION'S</h4>
+      <p>Registration Process of Public Charitable Trust. The Indian Trust act defines creating a Trust as “A trust is created when the author of the trustindicates with reasonable certainty by any words or acts: (a) an intention on his part to create thereby a trust, (b) the purpose of the trust, (c) the beneficiary, and.</p>
+    </div>
+    <div class="col-sm-5">
+  <span > <img class="circular" src="acquition.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030;">MERGER AND ACQUISITION</h4>
+      <p>A merger occurs when two separate entities combine forces to create a new, joint organization. Meanwhile, anacquisition refers to the takeover of one entity by another. Mergers and acquisitions may be completed to expand a company's reach or gain market share in an attempt to create shareholder value</p>
+    </div>
+	
+
+  </div>
+
+
+<br><br>
+<div class="row slideanim">
+    
+    <div class="col-sm-6">
+     <span > <img class="circular" src="cyber.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">CYBER CRIMES</h4>
+      <p>Information technology law concerns the law of information technology, including computing and the internet. It is related to legal informatics, and governs the digital dissemination of both information and software, information security and electronic commerce</p>
+    </div>
+    <div class="col-sm-5">
+      <span > <img class="circular" src="dfamily.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030;">DIVORCE, DOMESTIC VOILANCE AND MAINTAINANCE</h4>
+      <p>Family law is a legal practice area that focuses on issues involving family relationships, such as adoption, divorce, and child custody, among others. Attorneys practicing family lawcan represent clients in family court proceedings or in related negotiations and can also draft important legal documents such as court petitions or property agreements. Some family law attorneys even specialize in adoption, paternity, emancipation, or other matters not usually related to divorce.</p>
+    </div>
+	
+
+  </div>
+
+
+<br><br>
+<div class="row slideanim">
+    
+    <div class="col-sm-6">
+     <span > <img class="circular" src="industrial.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">INDUSTRIAL AND LABOUR DISPUTES</h4>
+      <p>The Industrial Disputes Act defines "Industrial dispute" as a dispute or difference between workmen and employers or between workmen and workmen, which is connected with employment or non-employment or the terms of employment or with the conditions of labour.</p>
+    </div>
+    <div class="col-sm-5">
+      
+        <span > <img class="circular" src="consumer.png" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030;">CONSUMER PROTECTION</h4>
+      <p>Consumer protection refers to the laws and other forms of government regulation designed to protect consumers. One form of consumer protection is product liability.</p>
+    </div>
+	
+
+  </div>
+
+
+<br><br>
+<div class="row slideanim">
+    
+    <div class="col-sm-6">
+ 
+        <span > <img class="circular" src="motor.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">MOTOR ACCIDENT CLAIMS</h4>
+      <p>Motor Accident Claim: Taxable or Not. shares. According to the Motor Vehicles Act, 1988, any person who has suffered injury, permanent disability or death caused by a motor accident, the victim or their next of kin is entitled to claim a compensation from the Motor Accidents Claim Tribunal or MACT</p>
+    </div>
+    <div class="col-sm-5">
+      
+        <span > <img class="circular" src="corruption.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030;">Prevention of Corruption Act</h4>
+      <p>The Prevention of Corruption Act, 1988 is an Act of the Parliament of India enacted to combat corruption in government agencies and public sector businesses in India.</p>
+    </div>
+	
+
+  </div>
+
+<br><br>
+<div class="row slideanim">
+    
+    
+        <span > <img class="circular" src="mcoca.jpg" alt="Avatar" height="230" width="230"> </span>
+      <h4 style="color:#303030">MCOCO and POCSO</h4>
+      <p>Maharashtra Control of Organised Crime Act, 1999 is a law enacted by Maharashtra state in India in 1999 to combat organised crime and terrorism.</p>
+    </div>
+    
+
+  
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Personal Information</h2><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+          <div class="zoom">
+        <img src="video/thakare.jpg" alt="Paris" width="400" height="300">
+        </div>
+        <p style="color:#000000"><strong>Adv.Chandrashekar Thakare</strong></p>
+        <p style="color:#000000">DEGREE</p>
+      </div>
+    </div>
+	
+ <div class="col-sm-4">
+      <div class="thumbnail">
+          <div class="zoom">
+        <img src="video/photo.jpg" alt="Paris" width="400" height="300">
+        </div>
+        <p style="color:#000000"><strong>Adv.Rutvij Deshpande</strong></p>
+        <p style="color:#000000">rutvijd62@gmail.com</p>
+      </div>
+    </div>
+<div class="col-sm-4">
+      <div class="thumbnail">
+          <div class="zoom">
+        <img src="video/amey.jpeg" alt="Paris" width="400" height="300">
+        </div>
+        <p style="color:#000000"><strong>Adv.Rutvij Deshpande</strong></p>
+        <p style="color:#000000">DEGREE</p>
+      </div>
+    </div>
+
+
+<div class="col-sm-4">
+      <div class="thumbnail">
+          <div class="zoom">
+        <img src="video/adv1.jpg" alt="Paris" width="400" height="300">
+        </div>
+        <p style="color:#000000"><strong>Adv.Rutvij Deshpande</strong></p>
+        <p style="color:#000000">DEGREE</p>
+      </div>
+    </div>
+    
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <div class="zoom">
+                  <img src="video/adv1.jpg" alt="San Francisco" width="400" height="300">
+        </div>
+                  <p style="color:#000000"><strong>Adv.Amey23 Deshpande</strong></p>
+        <p style="color:#000000">DEGREE</p>
+      </div>
+    </div>
+
+
+  </div><br>
+  
+  <h2>What our customers say about us?</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Contact us and we'll get back to you within 24 hours.</h2>
+
+      
+      <p><font size="5"><span class="glyphicon glyphicon-map-marker"></span> NASHIK OFFICE  :    Chamber No. 223 ,Building No. 2,Nashik,District Court Compound ,Nashik.</font></p>
+	<p><font size="5"><span class="glyphicon glyphicon-map-marker"></span> MUMBAI OFFICE:Office No. 5,Ground Floor,Bandukwala Building ,British Hotel Lane ,Next to Oval House ,Off. Bombay Samachar Marg. Fort ,Mumbai 400001 .</font></p>
+      <p><font size="5"><span class="glyphicon glyphicon-phone"></span> 7720072969 / 8999304314 </font></p>
+    
+      <p><a href="mailto:rutvijd62@gmail.com" target="_top"><font size="5"><span class="glyphicon glyphicon-envelope"></span> Send Mail :rutvijd62@gmail.com</font></a></p>
+</div>
+
+
+
+<div id="map"></div>
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat:  20.014314 , lng:  73.740553 };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 20,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Visit our Place!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkgMdRUKlaubhmY-9M2sAH2vSwBmy2NPk&callback=initMap">
+    </script>
+
+
+
+
+
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+ 
+  <p>Official website <br>Made by Shantanu Joshi</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
